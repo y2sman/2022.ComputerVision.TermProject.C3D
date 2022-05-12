@@ -8,7 +8,7 @@
 
 eval_ai 주소 : [Link](http://203.250.148.128:3088/web/challenges/challenge-page/85/overview)
 
-코드 설명 영상 : [#]()
+코드 설명 영상 : [YouTube](https://youtu.be/0senzUXK_3E)
 
 # VideoClassification with C3D
 Learning Spatiotemporal Features with 3D Convolutional Networks(이하 C3D)를 이용하여 수행할 video classification은 비디오를 보고, 비디오의 라벨을 예측하는 task 입니다. 본 논문에서는 video classification을 Sports-1M 데이터셋으로 학습하고, action recognition을 UCF-101로 평가합니다. Sports-1M의 학습 시간과 데이터셋 용량 문제로, 이번 텀프로젝트에서는 UCF-101만을 이용해서 학습 및 평가를 수행합니다.
