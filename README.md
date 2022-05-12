@@ -18,7 +18,7 @@ Learning Spatiotemporal Features with 3D Convolutional Networks(이하 C3D)를 �
 
 ![image](https://user-images.githubusercontent.com/24697575/167851410-3e802e6d-02f1-4fc8-aa28-86799016181f.png)
 
-UCF101의 공식 홈페이지에서 위와 같은 부분을 찾아, 데이터셋을 다운로드 받아주세요.
+UCF101의 공식 홈페이지에서 위와 같은 부분을 찾아, 데이터셋을 다운로드 받아주세요. 다운로드된 데이터셋의 경로를 mypath.py에 입력합니다.
 
 Train/Test split의 경우에는 Action Recognition을 다운로드 받아 사용해주세요.
 
@@ -77,15 +77,21 @@ ucf101
 │   │   └── ...
 │   └── ...
 ```
-전처리 과정이 끝난 뒤에는 위와 같은 구조를 가지게 됩니다.
+빠른 학습을 위해 데이터 전처리 과정이 포함되어 있습니다. 전처리 과정이 끝난 뒤에는 위와 같은 구조를 가지게 됩니다.
 
 데이터 로드 및 전처리 과정에 문제가 있다면 위 부분을 참고하세요.
 
 ## How to run
 모델을 학습하기 위해서는 아래 코드를 실행해주세요.
 ```
-python train.py
+python train.py --useTest
 ```
+
+만약 최초로 실행하는 경우라면, 아래의 코드를 실행해주세요.
+```
+python train.py --preprocess --useTest
+```
+
 
 평가는 아래 코드를 실행해주세요.
 ```
