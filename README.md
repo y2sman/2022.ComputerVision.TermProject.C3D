@@ -28,7 +28,7 @@ Train/Test split의 경우에는 Action Recognition을 다운로드 받아 사�
 - testlist02.txt & trainlist02.txt
 - testlist03.txt & trainlist03.txt
 
-01, 02, 03 중에서 여기서는 01 만을 사용합니다. 학습에서 3가지 split을 함께 사용하지 않도로 주의해주세요. (3가지 모두 사용할 경우, train/test 비디오가 서로 겹치게되어 치팅입니다.)
+01, 02, 03 중에서 여기서는 01 만을 사용합니다. 학습에서 3가지 split을 함께 사용하지 않도로 주의해주세요. "annotation" 폴더에 넣어둔 파일을 사용해도 됩니다. (3가지 모두 사용할 경우, train/test 비디오가 서로 겹치게됩니다.)
 
 ## Requirements
 
@@ -100,4 +100,4 @@ python evaluation.py
 
 ||train_ACC|test_ACC|
 |:---:|:---:|:---:|
-|C3D_UCF|90%|40%|
+|C3D_UCF|98.469%|42.162	%|
