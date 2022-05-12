@@ -89,7 +89,7 @@ python train.py
 
 평가는 아래 코드를 실행해주세요.
 ```
-python evaluation.py
+python evaluation.py --trained_model_path /path/to/trained_model
 ```
 
 ## Metric
