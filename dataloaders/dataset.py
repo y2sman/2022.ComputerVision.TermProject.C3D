@@ -1,6 +1,4 @@
 import os
-from sklearn.model_selection import train_test_split
-
 import torch
 import cv2
 import numpy as np
@@ -64,13 +62,6 @@ class VideoDataset(Dataset):
                     for id, label in enumerate(sorted(self.label2index)):
                         f.writelines(str(id+1) + ' ' + label + '\n')
 
-        elif dataset == 'hmdb51':
-            if not os.path.exists('dataloaders/hmdb_labels.txt'):
-                with open('dataloaders/hmdb_labels.txt', 'w') as f:
-                    for id, label in enumerate(sorted(self.label2index)):
-                        f.writelines(str(id+1) + ' ' + label + '\n')
-
-
     def __len__(self):
         return len(self.fnames)
 
@@ -108,8 +99,8 @@ class VideoDataset(Dataset):
         if not os.path.exists(os.path.join(self.output_dir, 'test')):
             os.mkdir(os.path.join(self.output_dir, 'test'))
 
-        train_annotation_path = '/raid/kjlee/workspace/2022.School.ComputerVision/pytorch-video-recognition/annotation/trainlist01.txt'
-        test_annotation_path = '/raid/kjlee/workspace/2022.School.ComputerVision/pytorch-video-recognition/annotation/testlist01.txt'
+        train_annotation_path = './annotation/trainlist01.txt'
+        test_annotation_path = './annotation/testlist01.txt'
 
         train_annotation = pd.read_csv(train_annotation_path, delim_whitespace=True)
         train_annotation = train_annotation.iloc[:,0]

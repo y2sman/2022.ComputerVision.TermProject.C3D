@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-from mypath import Path
 
 class C3D(nn.Module):
     """

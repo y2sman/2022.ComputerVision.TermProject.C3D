@@ -1,9 +1,5 @@
-from email.policy import default
-import timeit
 from datetime import datetime
-import socket
 import os
-import glob
 from tqdm import tqdm
 import numpy as np
 from sklearn.metrics import accuracy_score
@@ -11,7 +7,7 @@ import json
 import argparse
 
 import torch
-from torch import nn, optim
+from torch import nn
 from torch.utils.data import DataLoader
 
 from dataloaders.dataset import VideoDataset

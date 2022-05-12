@@ -1,6 +1,5 @@
 import timeit
 from datetime import datetime
-import socket
 import os
 import glob
 from tqdm import tqdm
