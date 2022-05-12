@@ -6,7 +6,7 @@
 
 논문 설명 영상 : [YouTube](https://youtu.be/U6PmduQ1BQw)
 
-eval_ai 주소 : [#]()
+eval_ai 주소 : [Link](http://203.250.148.128:3088/web/challenges/challenge-page/85/overview)
 
 코드 설명 영상 : [#]()
 
