@@ -38,7 +38,7 @@ python3.5 이상의 환경에서 각자 환경에서 GPU를 지원하는 버전�
 
 ```
 conda install opencv
-pip install tqdm scikit-learn tensorboardX
+pip install tqdm scikit-learn numpy pandas natsort 
 ```
 
 ## 데이터 구조
