@@ -106,4 +106,4 @@ python evaluation.py --trained_model_path /path/to/trained_model
 
 ||train_ACC|test_ACC|
 |:---:|:---:|:---:|
-|C3D_UCF|98.469%|42.162	%|
+|C3D_UCF|98.17%|40.08%|
