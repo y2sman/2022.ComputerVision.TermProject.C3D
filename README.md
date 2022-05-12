@@ -4,14 +4,14 @@
 
 논문 : [Learning Spatiotemporal Features with 3D Convolutional Networks](https://arxiv.org/pdf/1412.0767v4.pdf)
 
-논문 설명 영상 : [#]()
+논문 설명 영상 : [YouTube](https://youtu.be/U6PmduQ1BQw)
 
 eval_ai 주소 : [#]()
 
 코드 설명 영상 : [#]()
 
 # VideoClassification with C3D
-Learning Spatiotemporal Features with 3D Convolutional Networks(이하 C3D)를 이용하여 수행할 video classification은
+Learning Spatiotemporal Features with 3D Convolutional Networks(이하 C3D)를 이용하여 수행할 video classification은 비디오를 보고, 비디오의 라벨을 예측하는 task 입니다. 본 논문에서는 video classification을 Sports-1M 데이터셋으로 학습하고, action recognition을 UCF-101로 평가합니다. Sports-1M의 학습 시간과 데이터셋 용량 문제로, 이번 텀프로젝트에서는 UCF-101만을 이용해서 학습 및 평가를 수행합니다.
 
 ## Dataset
 본 프로젝트에서는 [UCF101](https://www.crcv.ucf.edu/data/UCF101.php)를 이용하여 학습 및 평가를 수행합니다.
@@ -28,7 +28,7 @@ Train/Test split의 경우에는 Action Recognition을 다운로드 받아 사�
 - testlist02.txt & trainlist02.txt
 - testlist03.txt & trainlist03.txt
 
-01, 02, 03 중에서 여기서는 01 만을 사용합니다. 학습에서 3가지 split을 함께 사용하지 않도로 주의해주세요.
+01, 02, 03 중에서 여기서는 01 만을 사용합니다. 학습에서 3가지 split을 함께 사용하지 않도로 주의해주세요. (3가지 모두 사용할 경우, train/test 비디오가 서로 겹치게되어 치팅입니다.)
 
 ## Requirements
 
@@ -91,3 +91,13 @@ python train.py
 ```
 python evaluation.py
 ```
+
+## Metric
+
+평가는 [ACC](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html?highlight=acc#sklearn.metrics.accuracy_score)를 이용합니다.
+
+## Performance
+
+||train_ACC|test_ACC|
+|:---:|:---:|:---:|
+|C3D_UCF|90%|40%|
