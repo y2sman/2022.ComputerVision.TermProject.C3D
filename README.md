@@ -84,12 +84,12 @@ ucf101
 ## How to run
 모델을 학습하기 위해서는 아래 코드를 실행해주세요.
 ```
-python train.py --useTest
+python train.py --useTest --nEpochs 60
 ```
 
 만약 최초로 실행하는 경우라면, 아래의 코드를 실행해주세요.
 ```
-python train.py --preprocess --useTest
+python train.py --preprocess --useTest --nEpochs 60
 ```
 
 
